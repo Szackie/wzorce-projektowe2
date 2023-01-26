@@ -12,10 +12,10 @@ public class WarunkiBiezace implements Obserwator,PanelInformacyjny{
         danePogodowe.zarejestrujObserwator(this);
     }
     @Override
-    public void aktualizacja(float temperatura, float wilgotnosc, float cisnienie) {
-        aktualnaTemperatura=temperatura;
-        aktualnaWilgotnosc=wilgotnosc;
-        aktualneCisnienie=cisnienie;
+    public void aktualizacja() {
+        aktualnaTemperatura=danePogodowe.getTemperatura();
+        aktualnaWilgotnosc=danePogodowe.getWilgotnosc();
+        aktualneCisnienie=danePogodowe.getCisnienie();
         dataPomiaru=new Date();
         wyswietl();
     }

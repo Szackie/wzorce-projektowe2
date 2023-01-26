@@ -7,8 +7,8 @@ public class IndeksCieplaPanel implements Obserwator,PanelInformacyjny{
         danePogodowe.zarejestrujObserwator(this);
     }
     @Override
-    public void aktualizacja(float temperatura, float wilgotnosc, float cisnienie) {
-        this.tempOdczuwalna=obliczIndeksCiepla(temperatura,wilgotnosc);
+    public void aktualizacja() {
+        this.tempOdczuwalna=obliczIndeksCiepla(danePogodowe.getTemperatura(),danePogodowe.getWilgotnosc());
         wyswietl();
     }
 

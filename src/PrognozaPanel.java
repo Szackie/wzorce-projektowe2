@@ -8,9 +8,9 @@ public class PrognozaPanel implements Obserwator, PanelInformacyjny {
       danePogodowe.zarejestrujObserwator(this);
    }
 
-   public void aktualizacja(float temperatura, float wilgotnosc, float cisnienie) {
+   public void aktualizacja() {
       poprzednieCisnienie = biezaceCisnienie;
-      biezaceCisnienie = cisnienie;
+      biezaceCisnienie = danePogodowe.getCisnienie();
       wyswietl();
    }
 

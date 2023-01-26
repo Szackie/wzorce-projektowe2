@@ -1,5 +1,3 @@
-import java.util.Date;
-
 class App {
     public static void main(String [] args){
         DanePogodowe danePogodowe= new DanePogodowe();
@@ -10,11 +8,7 @@ class App {
 
         danePogodowe.ustawOdczyty(23f,0.405f,1080f);
 
-
-
         System.out.println();
         danePogodowe.ustawOdczyty(13f,0.644f,1014f);
-
-
     }
 }

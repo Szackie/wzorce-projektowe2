@@ -10,7 +10,8 @@ public class StatystykiPanel implements Obserwator, PanelInformacyjny {
       danePogodowe.zarejestrujObserwator(this);
    }
 
-   public void aktualizacja(float temperatura, float wilgotnosc, float cisnienie) {
+   public void aktualizacja() {
+       float temperatura=danePogodowe.getTemperatura();
 		tempSuma += temperatura;
 		liczbaPomiarow++;
 

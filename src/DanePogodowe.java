@@ -25,7 +25,7 @@ private float cisnienie;
 
     public void powiadomObserwatory() {
         for(Obserwator obserwator: obserwatorList)
-            obserwator.aktualizacja(getTemperatura(),getWilgotnosc(),getCisnienie());
+            obserwator.aktualizacja();
     }
     public void zmienionoOdczyty(){
         powiadomObserwatory();
